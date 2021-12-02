@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	--backgroundColorPrimary: #15202b;
+	--backgroundColorSecondary: #192734;
+	--backgroundColorPrimaryHover: #202e3a;
+
+	--textColorPrimary: #ffffff;
+	--textColorSecondary: #1e76b2;
+	--textColorDisable: #d1d1d1;
+
+	--colorBorderActive: #1c84cc;
+	--colorBarActive: #1d9bf0;
+
+	--errorBackgroundColor: #ff6e6e;
+
+	--box-shadow: rgb(136 153 166 / 20%) 0px 0px 15px,
+		rgb(136 153 166 / 15%) 0px 0px 3px 1px;
+
+	--buttonPrimaryColor: #1d9bf0;
+
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	margin: 0;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--backgroundColorPrimary);
+	color: var(--textColorPrimary);
+}
+.body {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.containerProject {
+	width: 95%;
+	max-width: 1290px;
+	background-color: transparent;
+	box-sizing: border-box;
+	animation: fadein 0.5s ease-in;
+}
+/* Flex Styles */
+.flex {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
+.flex-aling-center {
+	align-items: center;
+}
+.flex-aling-right {
+	align-items: flex-end;
+}
+.flex-justify-right {
+	justify-content: flex-end;
+}
+.flex-justify-center {
+	justify-content: center;
+}
+.flex-justify-between {
+	justify-content: space-between;
+}
+.flex-justify-around {
+	justify-content: space-around;
+}
+.flex-column {
+	flex-direction: column;
+}
+
+/* TextStyles */
+.text-size-head {
+	font-size: 2.5rem;
+}
+.text-size-tittle {
+	font-size: 1.5rem;
+}
+.text-size-subtittle {
+	font-size: 1.2rem;
+}
+.text-size-normal {
+	font-size: 1rem;
+}
+.text-bold {
+	font-weight: bold;
+}
+.text-lighter {
+	font-weight: lighter;
+}
+.text-justify {
+	text-align: justify;
+}
+
+/* Images Styles */
+.img-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
 }
