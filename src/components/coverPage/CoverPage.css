@@ -21,26 +21,34 @@
 	height: 180px;
 	border-radius: 50%;
 	overflow: hidden;
+	transition: 0.1s ease-in;
+}
+.perfilImg:hover {
+	cursor: pointer;
+	transform: rotate(5deg);
 }
 .coverBtn-container {
 	padding: 2rem;
 }
 .btn-follow {
 	border: none;
-	border-radius: 50px;
-	padding: 10px 20px;
+	border-radius: 10px;
+	padding: 0px 20px;
 	background-color: var(--buttonPrimaryColor);
 	color: var(--textColorPrimary);
+	transition: 0.1s ease-in;
 }
 .btn-follow:hover {
 	background-color: var(--buttonHoverColor);
 	cursor: pointer;
+	transform: scale(0.9);
 }
 .btn-dots-container {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 	margin-left: 8px;
+	transition: 0.1s ease-in;
 }
 .btn-dots {
 	border: 1px solid var(--textColorPrimary);
@@ -50,13 +58,31 @@
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+	transition: 0.1s ease-in-out;
 }
 .btn-dots:hover {
 	cursor: pointer;
 	border: 2px solid var(--textColorPrimary);
+	transform: scale(0.9);
 }
 .btn-dots-container:hover {
 	background-color: var(--backgroundColorPrimaryHover);
+}
+.cover-Tittle {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.cover-Desc-Container {
+	margin-left: 5%;
+}
+.cover-Desc-name {
+	font-size: 2rem;
+	margin: 0;
+}
+.cover-Desc-desc {
+	max-width: 850px;
+	text-align: left;
 }
 
 /* -----------------Maximo (phone)--------------------- */
@@ -75,5 +101,13 @@
 	}
 	.coverBtn-container {
 		padding: 0.6rem;
+	}
+	.cover-Tittle {
+		margin-top: 1rem;
+		font-size: 1.1rem;
+		font-weight: lighter;
+	}
+	.cover-Desc-name {
+		font-size: 1.3rem;
 	}
 }

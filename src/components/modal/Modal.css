@@ -1,0 +1,67 @@
+.gallery-item-modal {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 0%;
+	margin: 0%;
+	z-index: 2;
+	/* animation: fadein 0.2s ease; */
+}
+.gallery-item-modal .image-modal {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.gallery-item-modal .image-modal img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.MODAL_STYLES {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	max-width: 66vw;
+	height: 90vh;
+	max-height: 100vh;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 5px;
+	z-index: 1000;
+	animation: fadein 0.3s ease;
+}
+.OVERLAY_STYLES {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1000;
+	animation: fadein 0.2s ease;
+}
+
+/* -----------------Maximo (phone)-------------------------------------------------------------------------------------------- */
+@media (max-width: 750px) {
+	.MODAL_STYLES {
+		width: 90vw;
+		max-width: 95vw;
+		height: auto;
+		border-radius: 9px;
+	}
+	.gallery-item-modal .image-modal img {
+		border-radius: 5px;
+	}
+}
+
+/* -------------------Minimo  (pantallas grandes)------------------------------------------------------------------------------------------ */
+@media (min-width: 1825px) {
+	.MODAL_STYLES {
+		width: 1144px;
+	}
+}

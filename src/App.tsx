@@ -1,30 +1,28 @@
+import { useContext } from 'react';
 import CoverPage from './components/coverPage/CoverPage';
+import Modal from './components/modal/Modal';
+import ModalScreen from './components/modal/ModalScreen';
+import ModalContext from './context/modalContext/ModalContext';
 
 function App() {
+	//Context de las funciones de la ventana Modal
+	const { isOpen, setIsOpen, imagenModal } = useContext(ModalContext);
 	return (
 		<>
 			<div className='body'>
+				<div style={{ position: 'relative', zIndex: 1 }}>
+					<Modal open={isOpen} onClose={() => setIsOpen(false)}>
+						{imagenModal ? (
+							<ModalScreen
+								largeImageURL={imagenModal.largeImageURL}
+								tags={imagenModal.tags}
+							/>
+						) : null}
+					</Modal>
+				</div>
 				<div className='containerProject'>
 					<div className='border-project'>
 						<CoverPage />
-						<p>Hello Criaturitas</p>
-						<p>
-							Lorem aliqua incididunt culpa dolor sunt irure quis occaecat tempor
-							commodo duis et. Cupidatat Lorem nisi fugiat elit officia eu aliqua id
-							elit magna fugiat dolor. Laboris labore ullamco est ut occaecat ad nulla
-							do. Quis dolore enim ad commodo reprehenderit id qui nisi incididunt.
-						</p>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
-						<h1>dsfsdfdfs</h1>
 					</div>
 				</div>
 			</div>
