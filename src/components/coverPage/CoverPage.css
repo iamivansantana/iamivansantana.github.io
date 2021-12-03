@@ -1,0 +1,79 @@
+.coverImg-container {
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+.perfilImg-container {
+	position: absolute;
+	bottom: -100px;
+	left: 5%;
+	background-color: var(--backgroundColorPrimary);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.perfilImg {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.coverBtn-container {
+	padding: 2rem;
+}
+.btn-follow {
+	border: none;
+	border-radius: 50px;
+	padding: 10px 20px;
+	background-color: var(--buttonPrimaryColor);
+	color: var(--textColorPrimary);
+}
+.btn-follow:hover {
+	background-color: var(--buttonHoverColor);
+	cursor: pointer;
+}
+.btn-dots-container {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 8px;
+}
+.btn-dots {
+	border: 1px solid var(--textColorPrimary);
+	background-color: transparent;
+	color: var(--textColorPrimary);
+	font-size: 8px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.btn-dots:hover {
+	cursor: pointer;
+	border: 2px solid var(--textColorPrimary);
+}
+.btn-dots-container:hover {
+	background-color: var(--backgroundColorPrimaryHover);
+}
+
+/* -----------------Maximo (phone)--------------------- */
+@media (max-width: 850px) {
+	.coverImg-container {
+		height: 150px;
+	}
+	.perfilImg-container {
+		bottom: -50px;
+		width: 100px;
+		height: 100px;
+	}
+	.perfilImg {
+		width: 90px;
+		height: 90px;
+	}
+	.coverBtn-container {
+		padding: 0.6rem;
+	}
+}

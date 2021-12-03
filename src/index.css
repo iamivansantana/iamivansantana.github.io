@@ -6,6 +6,8 @@
 	--textColorPrimary: #ffffff;
 	--textColorSecondary: #1e76b2;
 	--textColorDisable: #d1d1d1;
+	--textFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 
 	--colorBorderActive: #1c84cc;
 	--colorBarActive: #1d9bf0;
@@ -16,6 +18,7 @@
 		rgb(136 153 166 / 15%) 0px 0px 3px 1px;
 
 	--buttonPrimaryColor: #1d9bf0;
+	--buttonHoverColor: #3faaf1;
 
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -23,8 +26,7 @@
 
 body {
 	margin: 0;
-	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-		Roboto, Helvetica, Arial, sans-serif;
+	font-family: var(--textFamily);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--backgroundColorPrimary);
@@ -48,10 +50,16 @@ body {
 }
 .containerProject {
 	width: 95%;
-	max-width: 1290px;
+	max-width: 1490px;
 	background-color: transparent;
 	box-sizing: border-box;
 	animation: fadein 0.5s ease-in;
+}
+.border-project {
+	border-radius: 10px;
+	box-shadow: var(--box-shadow);
+	overflow: hidden;
+	margin: 1rem;
 }
 /* Flex Styles */
 .flex {
@@ -67,10 +75,10 @@ body {
 .flex-aling-center {
 	align-items: center;
 }
-.flex-aling-right {
+.flex-aling-end {
 	align-items: flex-end;
 }
-.flex-justify-right {
+.flex-justify-end {
 	justify-content: flex-end;
 }
 .flex-justify-center {
@@ -115,4 +123,14 @@ body {
 	height: 100%;
 	object-fit: cover;
 	object-position: 50% 50%;
+}
+
+/* -----------------Maximo (phone)--------------------- */
+@media (max-width: 850px) {
+	.containerProject {
+		width: 100%;
+	}
+	.border-project {
+		margin: 15px 5px;
+	}
 }
