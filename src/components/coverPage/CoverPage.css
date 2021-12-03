@@ -83,6 +83,16 @@
 .cover-Desc-desc {
 	max-width: 850px;
 	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+}
+.cover-Features {
+	/* border: 1px solid var(--colorBorderActive); */
+	border: 1px solid var(--backgroundColorPrimaryHover);
+	padding: 5px 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 15px;
 }
 
 /* -----------------Maximo (phone)--------------------- */
@@ -109,5 +119,8 @@
 	}
 	.cover-Desc-name {
 		font-size: 1.3rem;
+	}
+	.cover-Desc-desc {
+		font-size: 14px;
 	}
 }

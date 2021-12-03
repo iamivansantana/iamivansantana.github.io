@@ -68,11 +68,49 @@ const CoverPage = () => {
 							<span>📍Chilpancingo.Gro.</span>
 						</div>
 						<p className='cover-Desc-desc text-size-normal'>
-							Dolor ut dolore et voluptate esse ipsum qui ea mollit esse. In est irure
-							ullamco sint magna laboris dolore sit eiusmod. Aliqua fugiat sint
-							exercitation exercitation pariatur eiusmod labore non. Dolor ut dolore et
-							voluptate esse ipsum qui ea mollit esse. In est irure
+							Hello, my name is Iván Santana, I am a Software Engineer. My focus has
+							been primarily front-end web development. Do not hesitate to contact me,
+							You can find me on social networks and write to me, I will be happy to
+							help you.🗽
 						</p>
+						<div className='cover-Desc-desc'>
+							<div className='cover-Features'>
+								<span
+									style={{ color: 'var(--buttonPrimaryColor)', fontWeight: 'bold' }}
+								>
+									{'</> '}
+								</span>
+								3 years of development experience
+							</div>
+							<div className='cover-Features'>
+								<span>🖋️ </span>Designer
+							</div>
+							<div className='cover-Features'>
+								<span>🔱 </span>Leadership
+							</div>
+							<div className='cover-Features'>
+								<span style={{ color: 'yellow', fontWeight: 'bold' }}>{'>_ '}</span>
+								Developer
+							</div>
+							<div className='cover-Features'>
+								<span>🎙️ </span>Communication
+							</div>
+							<div className='cover-Features'>
+								<span>💪 </span>Responsibility
+							</div>
+							<div className='cover-Features'>
+								<span>🏆 </span>Commitment
+							</div>
+							<div className='cover-Features'>
+								<span>❤️ </span>Empathy
+							</div>
+							<div className='cover-Features'>
+								<span>⏳ </span>Initiative
+							</div>
+							<div className='cover-Features'>
+								<span>🕵️ </span>Self-taught
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
