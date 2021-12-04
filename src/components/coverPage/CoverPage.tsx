@@ -32,7 +32,7 @@ const CoverPage = () => {
 					</div>
 					<img
 						onClick={() => modaClick('assets/images/lyberty2.jpg', 'imgPerfil')}
-						className='img-cover img-Hover'
+						className='img-cover img-hover'
 						src='assets\images\lyberty2.jpg'
 						alt='Cover-img'
 					/>
@@ -67,11 +67,16 @@ const CoverPage = () => {
 							<span>@Iamivansantana </span>
 							<span>📍Chilpancingo.Gro.</span>
 						</div>
-						<p className='cover-Desc-desc text-size-normal'>
+						{/* <p className='cover-Desc-desc text-size-normal'>
 							Hello, my name is Iván Santana, I am a Software Engineer. My focus has
 							been primarily front-end web development. Do not hesitate to contact me,
 							You can find me on social networks and write to me, I will be happy to
 							help you.🗽
+						</p> */}
+						<p className='cover-Desc-desc text-size-normal'>
+							Front-End Developer. 🇲🇽 <br />
+							Sometimes most people don't know what they want until you show it to them
+							...🗽
 						</p>
 						<div className='cover-Desc-desc'>
 							<div className='cover-Features'>
@@ -110,6 +115,44 @@ const CoverPage = () => {
 							<div className='cover-Features'>
 								<span>🕵️ </span>Self-taught
 							</div>
+						</div>
+						<div className='flex cover-socialMedia cover-socialMedia-icon'>
+							<a
+								href='https://www.linkedin.com/in/iamivansantana/'
+								target='_blank'
+								rel='noopener noreferrer'
+								style={{ textDecoration: 'none' }}
+								className='btn-icon-hover'
+							>
+								<img src='assets\icons\icon-linkedin.svg' alt='linkedIn-icon' />
+							</a>
+							<a
+								href='https://twitter.com/IamIvanSantana'
+								target='_blank'
+								rel='noopener noreferrer'
+								style={{ textDecoration: 'none' }}
+								className='btn-icon-hover'
+							>
+								<img src='assets\icons\icon-twitter.svg' alt='twitter-icon' />
+							</a>
+							<a
+								href='https://github.com/iamivansantana'
+								target='_blank'
+								rel='noopener noreferrer'
+								style={{ textDecoration: 'none' }}
+								className='btn-icon-hover'
+							>
+								<img src='assets\icons\icon-github.svg' alt='github-icon' />
+							</a>
+							<a
+								href='https://www.instagram.com/ivansanttana/'
+								target='_blank'
+								rel='noopener noreferrer'
+								style={{ textDecoration: 'none' }}
+								className='btn-icon-hover'
+							>
+								<img src='assets\icons\icon-instagram.svg' alt='instagram-icon' />
+							</a>
 						</div>
 					</div>
 				</div>

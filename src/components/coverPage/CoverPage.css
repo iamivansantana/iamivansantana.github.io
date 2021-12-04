@@ -93,6 +93,25 @@
 	margin-right: 10px;
 	margin-bottom: 5px;
 	border-radius: 15px;
+	pointer-events: none;
+	user-select: none;
+}
+.cover-socialMedia {
+	margin-top: 1.1rem;
+	margin-bottom: 2rem;
+}
+.cover-socialMedia-icon a {
+	margin-right: 10px;
+	margin-bottom: 5px;
+	width: 2rem;
+	height: 3rem;
+}
+.btn-icon-hover {
+	transition: 0.2s ease-in-out;
+}
+.btn-icon-hover:hover {
+	cursor: pointer;
+	transform: scale(0.9);
 }
 
 /* -----------------Maximo (phone)--------------------- */
