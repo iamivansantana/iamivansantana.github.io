@@ -78,7 +78,10 @@ const CoverPage = () => {
 							Sometimes most people don't know what they want until you show it to them
 							...🗽
 						</p>
-						<div className='cover-Desc-desc'>
+						<div
+							className='cover-Desc-desc'
+							style={{ color: 'var(--textColorDisableLight)' }}
+						>
 							<div className='cover-Features'>
 								<span
 									style={{ color: 'var(--buttonPrimaryColor)', fontWeight: 'bold' }}

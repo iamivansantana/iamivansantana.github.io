@@ -6,6 +6,20 @@ const ModalScreen = ({ largeImageURL, tags }: any) => {
 	// acceso al contex
 	const { setIsOpen } = useContext(ModalContext);
 
+	// Other Way to close whit esc
+	// useEffect(() => {
+	// 	const handleEsc = (event:any) => {
+	// 	   if (event.keyCode === 27) {
+	// 		console.log('Close')
+	// 	  }
+	// 	};
+	// 	window.addEventListener('keydown', handleEsc);
+
+	// 	return () => {
+	// 	  window.removeEventListener('keydown', handleEsc);
+	// 	};
+	//   }, []);
+
 	//Cerrar con tecla Esc
 	const escFunction = useCallback(
 		(event) => {

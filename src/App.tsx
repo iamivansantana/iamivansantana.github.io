@@ -2,7 +2,9 @@ import { useContext } from 'react';
 import CoverPage from './components/coverPage/CoverPage';
 import Modal from './components/modal/Modal';
 import ModalScreen from './components/modal/ModalScreen';
+import NavBar from './components/navBar/NavBar';
 import ModalContext from './context/modalContext/ModalContext';
+import RouteApp from './routes/RouteApp';
 
 function App() {
 	//Context de las funciones de la ventana Modal
@@ -23,6 +25,10 @@ function App() {
 				<div className='containerProject'>
 					<div className='border-project'>
 						<CoverPage />
+						<div style={{ padding: '0px 5%', marginBottom: '2rem' }}>
+							<NavBar />
+							<RouteApp />
+						</div>
 					</div>
 				</div>
 			</div>
