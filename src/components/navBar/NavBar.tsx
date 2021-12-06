@@ -1,37 +1,85 @@
 import { useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar = () => {
-	useEffect(() => {
-		const marker: any = document.querySelector('#marker');
-		const item = document.querySelectorAll('nav a');
+	//useLocation para conocer el path
+	const { pathname } = useLocation();
 
+	//Effect que controla el comportamiento del indicador del NavBar
+	useEffect(() => {
+		//Referencia al Marcador
+		const marker: HTMLElement | null = document.querySelector('#marker');
+		//Referencia a la lista de elementos Navlink
+		const item: NodeListOf<Element> = document.querySelectorAll('nav a');
+
+		//Metodo para definir posicion y tamaño del marcador
+		//Recive e (evento - Elemento NavLink)
 		const indicador = (e: any) => {
-			marker.style.left = e.offsetLeft + 'px';
-			marker.style.width = e.offsetWidth + 5 + 'px';
+			//Si marcador existe
+			if (marker) {
+				//Se asigna el tamaño en pixeles del lado izquierdo, dependiendo del evento(Elemeto NavLink)
+				marker.style.left = e.offsetLeft + 'px';
+				//Se asigna el tamaño en pixeles del width, dependiendo del evento(Elemeto NavLink)
+				marker.style.width = e.offsetWidth + 5 + 'px';
+			} else return;
 		};
-		item.forEach((link) => {
-			link.addEventListener('click', (e) => {
+
+		//Metodo para asignar Marcador (NavLink Active)
+		const asignadorMarker = () => {
+			if (pathname === '/') {
+				//Path user
+				indicador(item[0]);
+			} else if (pathname === '/portfolio') {
+				//Path portfolio
+				indicador(item[1]);
+			} else if (pathname === '/others') {
+				//Path other
+				indicador(item[3]);
+			}
+		};
+		//Se ejecuta metodo
+		asignadorMarker();
+
+		//Mouseover
+		//Cuando el mouse esta encima cambia el marker
+		item.forEach((link: Element) => {
+			link.addEventListener('mouseover', (e) => {
 				indicador(e.target);
 			});
 		});
 
-		// item.forEach((link) => {
-		// 	link.addEventListener('mouseover', (e) => {
-		// 		indicador(e.target);
-		// 	});
-		// });
-	}, []);
+		//Mouseout
+		//Cuando el mouse ya no está encima cambia el marker al correspondiente dependiendo el path
+		item.forEach((link: Element) => {
+			link.addEventListener('mouseout', asignadorMarker);
+		});
+
+		// Devolvemos una función para anular la suscripción a los eventos
+		return () => {
+			window.removeEventListener('mouseover', (e) => {
+				indicador(e.target);
+			});
+			window.removeEventListener('mouseout', asignadorMarker);
+		};
+	}, [pathname]);
 
 	return (
 		<>
 			<div>
-				<nav className='navBar-container flex'>
-					<div id='marker2' />
+				<nav className='navBar-container flex '>
 					<div id='marker' />
-					<a href='#d'>Me </a>
-					<a href='#dd'>Projects</a>
-					<a href='#d'>others</a>
+					<div id='marker2' />
+					<NavLink className='NavLink' to='/'>
+						<div>Ivan Santana</div>
+						<div className='navbar-sub'>Profile</div>
+					</NavLink>
+					<NavLink className='NavLink' to='/portfolio'>
+						Portfolio
+					</NavLink>
+					<NavLink className='NavLink' to='/'>
+						Photos
+					</NavLink>
 				</nav>
 			</div>
 		</>

@@ -1,24 +1,18 @@
 .navBar-container {
 	position: relative;
+	padding: 1rem 0px 1.5rem 0px;
+	background-color: var(--backgroundColorPrimary);
 }
-.navBar-container a {
+
+.navBar-container .NavLink {
 	position: relative;
 	margin-right: 30px;
 	font-size: 1.3rem;
 	color: var(--textColorPrimary);
 	text-decoration: none;
-	z-index: 1;
 	cursor: pointer;
-}
-
-.navBar-container #marker2 {
-	position: absolute;
-	height: 4px;
-	width: 100%;
-	background-color: var(--backgroundColorPrimaryHover);
-	bottom: -8px;
-	transition: 0.5s;
-	border-radius: 4px;
+	padding: 0px 8px;
+	transition: 0.2s ease;
 }
 .navBar-container #marker {
 	position: absolute;
@@ -26,7 +20,36 @@
 	height: 4px;
 	width: 0;
 	background-color: var(--colorBarActive);
-	bottom: -8px;
+	bottom: 8px;
 	transition: 0.5s;
 	border-radius: 4px;
+	z-index: 2;
+}
+
+.navBar-container #marker2 {
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background-color: var(--backgroundColorPrimaryHover);
+	bottom: 8px;
+	transition: 0.5s;
+	border-radius: 4px;
+	z-index: 1;
+}
+.navbar-sub {
+	color: var(--textColorDisableLight);
+	font-size: 1rem;
+	font-weight: lighter;
+}
+.navBar-container .NavLink:hover {
+	background-color: var(--backgroundColorSecondary);
+	border-radius: 5px;
+}
+
+/* -----------------Maximo (phone)--------------------- */
+@media (max-width: 850px) {
+	.navBar-container .NavLink {
+		margin-right: 20px;
+		font-size: 1rem;
+	}
 }

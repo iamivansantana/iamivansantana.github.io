@@ -59,7 +59,7 @@ body {
 .border-project {
 	border-radius: 10px;
 	box-shadow: var(--box-shadow);
-	overflow: hidden;
+	/* overflow: hidden; */
 	margin: 1rem;
 }
 /* Flex Styles */
@@ -129,7 +129,15 @@ body {
 .img-hover:hover {
 	cursor: pointer;
 }
-
+.page-Content {
+	padding: 3rem 0px;
+	animation: fadein 0.5s ease-in;
+	z-index: 10;
+}
+.stiky {
+	position: sticky;
+	top: 0;
+}
 /* -----------------Maximo (phone)--------------------- */
 @media (max-width: 850px) {
 	.containerProject {

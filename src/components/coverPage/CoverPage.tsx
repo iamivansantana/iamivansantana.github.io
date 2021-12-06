@@ -33,6 +33,7 @@ const CoverPage = () => {
 					<img
 						onClick={() => modaClick('assets/images/lyberty2.jpg', 'imgPerfil')}
 						className='img-cover img-hover'
+						style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
 						src='assets\images\lyberty2.jpg'
 						alt='Cover-img'
 					/>
