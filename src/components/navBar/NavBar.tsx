@@ -70,14 +70,26 @@ const NavBar = () => {
 				<nav className='navBar-container flex '>
 					<div id='marker' />
 					<div id='marker2' />
-					<NavLink className='NavLink' to='/'>
+					<NavLink
+						onClick={() => window.scrollTo(0, 600)}
+						className='NavLink'
+						to='/'
+					>
 						<div>Ivan Santana</div>
 						<div className='navbar-sub'>Profile</div>
 					</NavLink>
-					<NavLink className='NavLink' to='/portfolio'>
+					<NavLink
+						onClick={() => window.scrollTo(0, 600)}
+						className='NavLink'
+						to='/portfolio'
+					>
 						Portfolio
 					</NavLink>
-					<NavLink className='NavLink' to='/'>
+					<NavLink
+						onClick={() => window.scrollTo(0, 600)}
+						className='NavLink'
+						to='/'
+					>
 						Photos
 					</NavLink>
 				</nav>
