@@ -24,7 +24,7 @@ export const projectsData = [
 		urlSite: 'https://buhuhumx-whois.netlify.app/',
 		imgDeskPath: 'assets/PortfolioImages/whoIsTheActor.webp',
 		description:
-			'An app where you can know a strange actor only uploading a picture.',
+			'An app where you can know a strange actor, you just need to uploading a picture.',
 	},
 	{
 		id: 'project-02-BabyWorldApp',
@@ -113,7 +113,7 @@ export const projectsData = [
 		urlGithub: 'https://github.com/iamivansantana/miapp-05breakingbad.git',
 		urlSite: 'https://buhuhumx-brakingbad.netlify.app/',
 		imgDeskPath: 'assets/PortfolioImages/brakingBadWeb.webp',
-		description: 'You can use this template to create your own resume..',
+		description: 'This page show you diferents phrases of the brakingBad series.',
 	},
 	{
 		id: 'project-10-Resume',
