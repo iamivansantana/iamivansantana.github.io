@@ -8,7 +8,7 @@
 }
 .project-card-head {
 	padding: 10px;
-	/* background-color: violet; */
+	height: auto;
 }
 .project-card-name {
 	color: var(--textColorSecondary);
@@ -30,7 +30,8 @@
 	text-align: justify;
 	font-weight: lighter;
 	color: var(--textColorDisableLight);
-	height: 70px;
+	min-height: 40px;
+
 	margin-bottom: 8px;
 	transition: 0.3s ease-in;
 	pointer-events: none;
@@ -58,5 +59,8 @@
 @media (max-width: 850px) {
 	.project-card-content {
 		width: 90%;
+	}
+	.portfolio-img {
+		height: 165px;
 	}
 }

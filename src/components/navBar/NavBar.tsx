@@ -89,8 +89,9 @@ const NavBar = () => {
 						onClick={() => window.scrollTo(0, 600)}
 						className='NavLink'
 						to='/'
+						style={{ fontSize: '10px' }}
 					>
-						Photos
+						● ● ●
 					</NavLink>
 				</nav>
 			</div>
