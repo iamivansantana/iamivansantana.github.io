@@ -6,7 +6,7 @@ export const skillsLanguages = [
 		imgTag: 'JavaScript-icon',
 	},
 	{
-		id: 'TypeSript',
+		id: 'TypeScript',
 		name: 'TypeSript',
 		imgUrl: 'assets/icons/skills/typescript.svg',
 		imgTag: 'TypeSript-icon',
