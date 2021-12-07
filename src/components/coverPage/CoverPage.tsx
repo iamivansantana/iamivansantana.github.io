@@ -21,20 +21,20 @@ const CoverPage = () => {
 					<div className='perfilImg-container'>
 						<div
 							className='perfilImg'
-							onClick={() => modaClick('assets/images/ios-perfil.png', 'imgPerfil')}
+							onClick={() => modaClick('assets/images/ios-perfil.webp', 'imgPerfil')}
 						>
 							<img
 								className='img-cover'
-								src='assets\images\ios-perfil.png'
+								src='assets\images\ios-perfil.webp'
 								alt='imgPerfil'
 							/>
 						</div>
 					</div>
 					<img
-						onClick={() => modaClick('assets/images/lyberty2.jpg', 'imgPerfil')}
+						onClick={() => modaClick('assets/images/lyberty2.webp', 'imgPerfil')}
 						className='img-cover img-hover'
 						style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
-						src='assets\images\lyberty2.jpg'
+						src='assets\images\lyberty2.webp'
 						alt='Cover-img'
 					/>
 				</div>

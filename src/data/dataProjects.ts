@@ -24,7 +24,7 @@ export const projectsData = [
 		urlSite: 'https://buhuhumx-whois.netlify.app/',
 		imgDeskPath: 'assets/PortfolioImages/whoIsTheActor.webp',
 		description:
-			'An app where you can know a strange actor only uploading and picture.',
+			'An app where you can know a strange actor only uploading a picture.',
 	},
 	{
 		id: 'project-02-BabyWorldApp',
@@ -54,6 +54,33 @@ export const projectsData = [
 			'Project to show a pictures gallery using infinite scroll and modal.',
 	},
 	{
+		id: 'project-0300-Schedule',
+		name: 'Schedule',
+		urlGithub: 'https://github.com/iamivansantana/schedule-App.git',
+		urlSite: 'https://schedule-app-serve.herokuapp.com/',
+		imgDeskPath: 'assets/PortfolioImages/Schedule.webp',
+		description:
+			'A schedule example using redux, redux thunk and JWT, also you can do a CRUD to the backend in this project.',
+	},
+	{
+		id: 'project-07-FormUsuarios',
+		name: 'FormUsuarios',
+		urlGithub: 'https://github.com/iamivansantana/FormularioPerfilUsuario.git',
+		urlSite: 'https://buhuhumx-form.netlify.app/',
+		imgDeskPath: 'assets/PortfolioImages/FormPefilUsers-pc.png',
+		description:
+			'Form with fields validation, the form take like his initial state an object with nested objects.',
+	},
+	{
+		id: 'project-08-CarrouselApp',
+		name: 'CarrouselApp',
+		urlGithub: 'https://github.com/iamivansantana/Carrousel.git',
+		urlSite: 'https://buhuhumx-carrousel.netlify.app/',
+		imgDeskPath: 'assets/PortfolioImages/Carrousel-pc.png',
+		description:
+			'You can use this to create a carousel of images, item, div, etc. in an easy and responsive way..',
+	},
+	{
 		id: 'project-04-shopingCar',
 		name: 'ShopingCar',
 		urlGithub: 'https://github.com/iamivansantana/ShoppingCart',
@@ -79,24 +106,6 @@ export const projectsData = [
 		imgDeskPath: 'assets/PortfolioImages/capturashadowMaker-pc.png',
 		description:
 			'Project to help you make CSS shadows in a visual, easy and fast way.',
-	},
-	{
-		id: 'project-07-FormUsuarios',
-		name: 'FormUsuarios',
-		urlGithub: 'https://github.com/iamivansantana/FormularioPerfilUsuario.git',
-		urlSite: 'https://buhuhumx-form.netlify.app/',
-		imgDeskPath: 'assets/PortfolioImages/FormPefilUsers-pc.png',
-		description:
-			'Form with fields validation, the form take like his initial state an object with nested objects.',
-	},
-	{
-		id: 'project-08-CarrouselApp',
-		name: 'CarrouselApp',
-		urlGithub: 'https://github.com/iamivansantana/Carrousel.git',
-		urlSite: 'https://buhuhumx-carrousel.netlify.app/',
-		imgDeskPath: 'assets/PortfolioImages/Carrousel-pc.png',
-		description:
-			'You can use this to create a carousel of images, item, div, etc. in an easy and responsive way..',
 	},
 	{
 		id: 'project-09-BrakingBad',
