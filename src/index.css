@@ -132,7 +132,6 @@ body {
 .page-Content {
 	padding: 3rem 0px;
 	animation: fadein 0.5s ease-in;
-	z-index: 10;
 }
 .stiky {
 	position: sticky;

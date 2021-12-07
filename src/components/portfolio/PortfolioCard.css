@@ -1,0 +1,62 @@
+.project-card-content {
+	border: 1.5px solid var(--textColorDisableLight);
+	border-radius: 10px;
+	width: 100%;
+	max-width: 400px;
+	overflow: hidden;
+	transition: 0.3s ease-in;
+}
+.project-card-head {
+	padding: 10px;
+	/* background-color: violet; */
+}
+.project-card-name {
+	color: var(--textColorSecondary);
+	text-transform: capitalize;
+	transition: 0.3s ease-in;
+
+	text-decoration: none;
+}
+.portfolio-github-enlace {
+	transition: 0.3s ease-in;
+}
+.portfolio-github-enlace:hover {
+	transform: rotate(-25deg);
+	cursor: pointer;
+}
+.portfolio-card-desc {
+	margin: 0;
+	padding: 0px 10px;
+	text-align: justify;
+	font-weight: lighter;
+	color: var(--textColorDisableLight);
+	height: 70px;
+	margin-bottom: 8px;
+	transition: 0.3s ease-in;
+	pointer-events: none;
+}
+.portfolio-img {
+	height: 200px;
+}
+
+.project-card-content:hover {
+	/* cursor: pointer; */
+	border: 1.5px solid var(--colorBorderActive);
+}
+.project-card-content:hover .portfolio-card-desc {
+	color: var(--textColorDisable);
+}
+.project-card-content:hover .project-card-name {
+	color: var(--colorBarActive);
+}
+.project-card-name:hover {
+	cursor: pointer;
+	text-decoration: underline 2px;
+}
+
+/* -----------------Maximo (phone)--------------------- */
+@media (max-width: 850px) {
+	.project-card-content {
+		width: 90%;
+	}
+}

@@ -1,0 +1,91 @@
+.porfile-desc {
+	border: 1px solid var(--backgroundColorPrimaryHover);
+	border-radius: 10px;
+	padding: 0px 10px;
+	margin-top: 10px;
+	color: var(--textColorDisableLight);
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: left;
+}
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 'contenedor1 contenedor2';
+	width: 100%;
+	height: 100%;
+}
+.contenedor1 {
+	grid-area: contenedor1;
+	display: flex;
+	flex-direction: column;
+}
+.contenedor2 {
+	grid-area: contenedor2;
+}
+/* *************** Skills Styles  ******************** */
+.skills-border {
+	border-left: 1px solid var(--textColorDisableLight);
+	margin-bottom: 10px;
+	margin-right: 5px;
+	padding-left: 10px;
+	max-width: 600px;
+}
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.porfile-skill {
+	margin: 5px 10px 5px 0px;
+	width: auto;
+}
+.porfile-skill-img-border {
+	border: 1px solid var(--textColorDisableLight);
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.porfile-skill-img {
+	width: 20px;
+	height: 20px;
+}
+.porfile-img-position {
+	width: 100px;
+	height: 80px;
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+/* -----------------Maximo (phone)--------------------- */
+@media (max-width: 850px) {
+	.porfile-desc {
+		font-size: 1rem;
+		line-height: 22px;
+		text-align: justify;
+	}
+	.skills-grid {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'contenedor1'
+			'contenedor2';
+	}
+	.porfile-skill-img-border {
+		border: 1px solid var(--textColorDisableLight);
+		width: 25px;
+		height: 25px;
+		border-radius: 5px;
+		margin-right: 10px;
+	}
+	.porfile-skill-img {
+		width: 15px;
+		height: 15px;
+	}
+	.porfile-img-position {
+		width: 120px;
+		padding: 0px;
+	}
+}

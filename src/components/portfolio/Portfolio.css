@@ -1,0 +1,21 @@
+.portfolio-grid {
+	display: flex;
+}
+
+/* List */
+.containerListGrid {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	row-gap: 6rem;
+	column-gap: 10px;
+	place-items: center;
+}
+
+/* -----------------Maximo (phone)--------------------- */
+@media (max-width: 850px) {
+	.containerListGrid {
+		row-gap: 3rem;
+		column-gap: 0px;
+	}
+}
