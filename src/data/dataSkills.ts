@@ -7,9 +7,9 @@ export const skillsLanguages = [
 	},
 	{
 		id: 'TypeScript',
-		name: 'TypeSript',
+		name: 'TypeScript',
 		imgUrl: 'assets/icons/skills/typescript.svg',
-		imgTag: 'TypeSript-icon',
+		imgTag: 'TypeScript-icon',
 	},
 ];
 export const skillsLibraries = [

@@ -43,7 +43,7 @@ const CoverPage = () => {
 					{/* <button className='btn-follow text-size-normal text-bold' type='button'>
 						Follow
 					</button> */}
-					<span className='cover-Tittle'>Software Egineer</span>
+					<span className='cover-Tittle'>Software Engineer</span>
 					<div className='btn-dots-container flex flex-center'>
 						<button className='btn-dots text-size-normal' type='button'>
 							● ● ●
@@ -68,12 +68,6 @@ const CoverPage = () => {
 							<span>@Iamivansantana </span>
 							<span>📍Chilpancingo.Gro.</span>
 						</div>
-						{/* <p className='cover-Desc-desc text-size-normal'>
-							Hello, my name is Iván Santana, I am a Software Engineer. My focus has
-							been primarily front-end web development. Do not hesitate to contact me,
-							You can find me on social networks and write to me, I will be happy to
-							help you.🗽
-						</p> */}
 						<p className='cover-Desc-desc text-size-normal'>
 							Front-End Developer. 🇲🇽 <br />
 							Sometimes most people don't know what they want until you show it to them
