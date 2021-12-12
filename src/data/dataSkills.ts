@@ -25,6 +25,12 @@ export const skillsLibraries = [
 		imgUrl: 'assets/icons/skills/redux.svg',
 		imgTag: 'Redux-icon',
 	},
+	{
+		id: 'Webpack',
+		name: 'Webpack',
+		imgUrl: 'assets/icons/skills/webpack-icon.svg',
+		imgTag: 'webpack-icon',
+	},
 ];
 export const skillsDataBases = [
 	{
@@ -70,6 +76,12 @@ export const skillsOthers = [
 		name: 'Node.js',
 		imgUrl: 'assets/icons/skills/nodejs-icon.svg',
 		imgTag: 'Nodejs-icon',
+	},
+	{
+		id: 'Postman',
+		name: 'Postman',
+		imgUrl: 'assets/icons/skills/postman.svg',
+		imgTag: 'Postman-icon',
 	},
 	{
 		id: 'GoogleAnalytics',
